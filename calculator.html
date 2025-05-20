@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="container">
+        <p style="font-size: 1rem; font-family: monospace; padding: 10px; text-align: center;">Calculator by raymuos</p>
+        <textarea id="display" readonly></textarea>
+
+        <div id="btns-div">
+            <button onclick="appendToDisplay('7')" class="btn" id="b7">7</button>
+            <button onclick="appendToDisplay('8')" class="btn" id="b8">8</button>
+            <button onclick="appendToDisplay('9')" class="btn" id="b9">9</button>
+            <button onclick="appendToDisplay('/')" class="btn btn-type-2" id="bslash">/</button>
+
+            <button onclick="appendToDisplay('4')" class="btn" id="b4">4</button>
+            <button onclick="appendToDisplay('5')" class="btn" id="b5">5</button>
+            <button onclick="appendToDisplay('6')" class="btn" id="b6">6</button>
+            <button onclick="appendToDisplay('*')" class="btn btn-type-2" id="bstar">*</button>
+
+            <button onclick="appendToDisplay('1')" class="btn" id="b1">1</button>
+            <button onclick="appendToDisplay('2')" class="btn" id="b2">2</button>
+            <button onclick="appendToDisplay('3')" class="btn" id="b3">3</button>
+            <button onclick="appendToDisplay('-')" class="btn btn-type-2" id="bminus">-</button>
+
+            <button onclick="appendToDisplay('0')" class="btn" id="b0">0</button>
+            <button onclick="appendToDisplay('.')" class="btn" id="bdeci">.</button>
+            <button onclick="appendToDisplay('+')" class="btn btn-type-2" id="bplus">+</button>
+            
+
+            <button onclick="clearDisplay()" class="btn btn-type-2" id="clearBtn">C</button>
+            <button onclick="execute()" class="btn btn-type-2" id="executeBtn">=</button>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
