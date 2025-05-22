@@ -95,6 +95,11 @@ document.addEventListener("keydown", (e) => {
             Keypress(key);
             break;
 
+        case '.':
+            key = document.getElementById("bdeci");
+            Keypress(key);
+            break;
+
         case 'Enter':
             key = document.getElementById("executeBtn");
             Keypress(key);
