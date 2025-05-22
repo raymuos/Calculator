@@ -16,12 +16,13 @@ body{
 
 #container{
     background: #222;
-    width: 350px;
-    margin-top: 8vh;
+    width: 300px;
+    margin-top: 10vh;
     margin-inline: auto;
     border-radius: 15px;
     padding-block: 25px;
     border: solid 2px #383838;
+    box-shadow: 0 0 20px #aaaaaa44 ;
 }
 
 #display{
@@ -35,8 +36,7 @@ body{
     font: inherit;
     color: inherit;
 
-    font-size: 4rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
 
     overflow: scroll;
 }
@@ -48,16 +48,16 @@ body{
     justify-content: flex-start;
     align-items: center;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 10px;
 
-    width: 300px;
+    width: 270px;
 }
 
 .btn{
     border: 0;
     width: 60px;
     height: 60px;
-    border-radius: 20px;
+    border-radius: 50%;
 
     background-color: #404040;
     color: #fff;
@@ -81,17 +81,19 @@ body{
 }
 
 #b0{
-    width: 140px;
-    border-radius: 20px;
+    width: 130px;
+    border-radius: 60px;
 }
 
 #clearBtn{
-    width: 140px;
+    width: 130px;
+    border-radius: 60px;
 }
 
 #executeBtn{
-    width: 140px;
+    width: 130px;
     background-color: #0082bb;
+    border-radius: 60px;
 }
 
 .btn-type-2.active{
@@ -112,4 +114,11 @@ body{
 #executeBtn.active{
     background-color: #3f3f3f;
     color: #0082bb;
+}
+
+
+@media (max-width: 768px) {
+    #container{
+        margin-top: 0;
+    }
 }
